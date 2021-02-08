@@ -10,3 +10,22 @@ FILTERS = {
     'max': MAX_PRICE
 }
 BASE_URL = "https://www.amazon.com/"
+
+""" path for the driver - chromedriver enabled """
+def get_chrome_web_driver(options):
+    return webdriver.Chrome('./chromedriver', chrome_options=options)
+
+""" fn to get the webdriver options """
+def get_web_driver_option():
+    return webdriver.ChromeOptions()
+
+def set_ignore_certificate_error(options):
+    options.add_argument('--ignore-certificate-errors')
+
+
+def set_browser_as_incognito(options):
+    options.add_argument('--incognito')
+
+
+def set_automation_as_head_less(options):
+    options.add_argument('--headless')
