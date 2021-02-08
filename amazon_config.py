@@ -1,15 +1,18 @@
 
+# file contains all the data for which the scraper is to be scraped
+
 from selenium import webdriver
 
 DIRECTORY = 'reports'
 NAME = 'PS4'
-CURRENCY = '€'
+CURRENCY = '$'
 MIN_PRICE = '275'
 MAX_PRICE = '650'
 FILTERS = {
     'min': MIN_PRICE,
     'max': MAX_PRICE
 }
+
 BASE_URL = "http://www.amazon.com/"
 
 
